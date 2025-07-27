@@ -222,7 +222,7 @@ html {
     <!-- LEFT: Logo + Burger tightly aligned to far left -->
     <div class="flex items-center space-x-3">
       <!-- Radar Logo (slightly stretched) -->
-      <a href="/" class="block">
+      <a href="#home" class="block">
         <img src="deltawave-radar-icon.png" alt="Delta Wave Logo" class="h-10 md:h-12 w-[52px] object-contain" />
       </a>
 
@@ -434,25 +434,24 @@ html {
 
 <!-- ============  ALPHA – BID RECON TERMINAL  ============ -->
 <section id="alpha-terminal-section" class="relative bg-black py-32 px-6 overflow-hidden scroll-mt-32">
-  <!-- Centered HUD Radar Video -->
-  <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-<video
-  src="radar-hud-fixed.mp4"
-  class="hud-radar-video w-[400px] h-[400px] md:w-[500px] md:h-[500px] opacity-10 mix-blend-screen"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="auto"
-></video>
 
-
-
+  <!-- Fullscreen Video Background Behind Terminal -->
+  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+    <video
+      src="radar-hud-fixed.mp4"
+      class="w-full h-full object-cover opacity-10 mix-blend-screen"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    ></video>
   </div>
 
   <!-- Terminal Card -->
   <div data-aos="fade-up" data-aos-duration="1000"
-    class="w-full max-w-3xl mx-auto relative rounded-xl border border-green-500 shadow-2xl bg-[#0b0f13]/90 backdrop-blur-sm px-6 py-10 font-mono z-10 alpha-scanlines">
+    class="w-full max-w-3xl mx-auto relative rounded-xl border border-green-500 shadow-2xl bg-black/60 backdrop-blur-[1.5px] px-6 py-10 font-mono z-10 alpha-scanlines">
+
     <!-- Outer Glow -->
     <div class="absolute -inset-1 rounded-xl border border-green-400 opacity-30 blur-md pointer-events-none animate-pulse"></div>
 
@@ -471,6 +470,7 @@ html {
       <p>&gt; <span class="typed-line" data-text='No dashboards. Just classified recon — delivered directly to your command.'></span><span class="alpha-blinking-cursor">█</span></p>
     </div>
   </div>
+
 </section>
 
 
