@@ -223,7 +223,7 @@ html {
     <div class="flex items-center space-x-3">
       <!-- Radar Logo (slightly stretched) -->
       <a href="/" class="block">
-        <img src="./img/deltawave-radar-icon.png" alt="Delta Wave Logo" class="h-10 md:h-12 w-[52px] object-contain" />
+        <img src="deltawave-radar-icon.png" alt="Delta Wave Logo" class="h-10 md:h-12 w-[52px] object-contain" />
       </a>
 
       <!-- Burger Icon -->
@@ -259,17 +259,18 @@ html {
 <!-- ========= HERO SECTION ========= -->
 <section id="home"
   class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 bg-cover bg-center"
-   style="background-image: url('radar-bg.png'); background-size: cover; background-position: center center;"></section>
+  style="background-image: url('radar-bg.png'); background-size: cover; background-position: center center;">
 
-   <!-- Dark overlay -->
-  <div class="absolute inset-0 bg-black/60"></div>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black/60 z-0"></div>
 
   <!-- Main content -->
   <div class="relative z-10 w-full max-w-4xl mx-auto py-20 sm:py-28 text-left">
     <div>
 
       <!-- Headline -->
-      <h1 data-aos="fade-up" data-aos-delay="100" class="font-headline text-primary text-4xl sm:text-5xl md:text-6xl leading-tight uppercase drop-shadow-lg tracking-wide">
+      <h1 data-aos="fade-up" data-aos-delay="100"
+          class="font-headline text-primary text-4xl sm:text-5xl md:text-6xl leading-tight uppercase drop-shadow-lg tracking-wide">
         Tactical.<br>Intelligence.<br>Delivered.
       </h1>
 
@@ -287,21 +288,26 @@ html {
       </a>
 
       <!-- Divider -->
-      <div data-aos="fade-up" data-aos-delay="700" class="mt-10 mb-8 border-t border-gray-700/40 w-full"></div>
+      <div data-aos="fade-up" data-aos-delay="700"
+           class="mt-10 mb-8 border-t border-gray-700/40 w-full"></div>
 
       <!-- Founder’s Mission -->
-      <h3 data-aos="fade-up" data-aos-delay="800" class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-gray-300 mb-3">
+      <h3 data-aos="fade-up" data-aos-delay="800"
+          class="text-xs sm:text-sm font-semibold uppercase tracking-wider text-gray-300 mb-3">
         The Founder’s Mission
       </h3>
 
-      <div data-aos="fade-up" data-aos-delay="1000" class="space-y-4 text-[1rem] leading-relaxed max-w-2xl">
+      <div data-aos="fade-up" data-aos-delay="1000"
+           class="space-y-4 text-[1rem] leading-relaxed max-w-2xl">
         <span id="typed-mission" class="text-gray-200 font-medium leading-snug whitespace-pre-line block"></span>
         <p class="text-sm italic text-gray-500 mt-4">— Kennedy Andrews, Founder</p>
       </div>
 
     </div>
   </div>
+
 </section>
+
 
 
 <!-- WHY TERMINAL SECTION -->
@@ -431,7 +437,7 @@ html {
   <!-- Centered HUD Radar Video -->
   <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
 <video
-  src="radar-hud.mp4"
+  src="radar-hud-fixed.mp4"
   class="hud-radar-video w-[400px] h-[400px] md:w-[500px] md:h-[500px] opacity-10 mix-blend-screen"
   autoplay
   muted
