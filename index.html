@@ -435,11 +435,11 @@ html {
 <!-- ============  ALPHA – BID RECON TERMINAL  ============ -->
 <section id="alpha-terminal-section" class="relative bg-black py-32 px-6 overflow-hidden scroll-mt-32">
 
-  <!-- Fullscreen Video Background Behind Terminal -->
-  <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+  <!-- Centered HUD Radar Video -->
+  <div class="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
     <video
       src="radar-hud-fixed.mp4"
-      class="w-full h-full object-cover opacity-10 mix-blend-screen"
+      class="w-[320px] h-[320px] md:w-[420px] md:h-[420px] opacity-25 mix-blend-screen"
       autoplay
       muted
       loop
@@ -450,28 +450,30 @@ html {
 
   <!-- Terminal Card -->
   <div data-aos="fade-up" data-aos-duration="1000"
-    class="w-full max-w-3xl mx-auto relative rounded-xl border border-green-500 shadow-2xl bg-black/60 backdrop-blur-[1.5px] px-6 py-10 font-mono z-10 alpha-scanlines">
+    class="w-full max-w-3xl mx-auto relative rounded-xl border border-green-500 shadow-2xl bg-black/30 backdrop-blur-[1px] px-6 py-10 font-mono z-10 alpha-scanlines">
 
     <!-- Outer Glow -->
     <div class="absolute -inset-1 rounded-xl border border-green-400 opacity-30 blur-md pointer-events-none animate-pulse"></div>
 
     <!-- Terminal Output -->
-    <div id="alpha-terminal-text" class="space-y-4 text-green-400 text-left text-[1.1rem] leading-snug font-medium">
+    <div id="alpha-terminal-text" class="space-y-4 text-left text-[1.1rem] leading-snug font-medium text-green-400">
       <p>&gt; <span class="typed-line" data-html="true" data-text='delta_wave@terminal:~$ ./alpha_recon --ts=$(date +%s) --extract --uplink... 🧑‍💻'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='Initializing Delta_Wave.ALPH4_R3c0n... 🌐'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='Connection established... 📡'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='Beginning sweep of 450+ Southern California portals...'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='Extracting real targets. Filtering noise. Deploying intel...'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-cyan-300" data-text='Initializing Delta_Wave.ALPH4_R3c0n... 🌐'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-white" data-text='Connection established... 📡'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-green-300" data-text='Beginning sweep of 450+ Southern California portals...'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-green-300" data-text='Extracting real targets. Filtering noise. Deploying intel...'></span><span class="alpha-blinking-cursor">█</span></p>
+
       <p>&gt; <span class="typed-line" data-text='──── <span class="text-yellow-300 font-bold">ADDENDUM & COMPETITIVE INTEL UPLINK 🔍</span>'></span><span class="alpha-blinking-cursor">█</span></p>
+
       <p>&gt; <span class="typed-line" data-text='<span class="text-orange-400 font-semibold">ALPHA</span> includes daily addendum scans to detect critical <span class="text-red-400 font-semibold">spec changes</span> —'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='Additions, removals, and agency updates — before they blindside your team.'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='We also identify who else might be bidding.'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-white" data-text='Additions, removals, and agency updates — before they blindside your team.'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-white" data-text='We also identify who else might be bidding.'></span><span class="alpha-blinking-cursor">█</span></p>
       <p>&gt; <span class="typed-line" data-text='Giving your office <span class="text-cyan-300 font-bold">field-level tactical intel</span> with zero digging.'></span><span class="alpha-blinking-cursor">█</span></p>
-      <p>&gt; <span class="typed-line" data-text='No dashboards. Just classified recon — delivered directly to your command.'></span><span class="alpha-blinking-cursor">█</span></p>
+      <p>&gt; <span class="typed-line text-white" data-text='No dashboards. Just classified recon — delivered directly to your command.'></span><span class="alpha-blinking-cursor">█</span></p>
     </div>
   </div>
-
 </section>
+
 
 
 
